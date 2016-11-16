@@ -35,20 +35,15 @@
                                     <constraint firstAttribute="height" constant="60" id="gXI-ZM-s2D"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-mh-jwf">
-                                <frame key="frameInset" minX="191" minY="270" width="71" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-mh-jwf">
+                                <frame key="frameInset" minX="66" minY="303" width="71" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="EHc-8x-ShV" userLabel="Heart">
-                                <frame key="frameInset" minX="270" minY="270" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-NE-oVA">
-                                <frame key="frameInset" minX="338" minY="270" width="110" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="EHc-8x-ShV" userLabel="Heart"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swift" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-NE-oVA">
+                                <frame key="frameInset" minX="238" minY="303" width="110" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -56,8 +51,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="a8w-NE-oVA" firstAttribute="leading" secondItem="EHc-8x-ShV" secondAttribute="trailing" constant="21" id="5O7-Uz-CrD"/>
                             <constraint firstAttribute="bottomMargin" secondItem="22i-en-w2K" secondAttribute="bottom" id="9jD-lX-5gX"/>
+                            <constraint firstItem="EHc-8x-ShV" firstAttribute="leading" secondItem="P2F-mh-jwf" secondAttribute="trailing" constant="20" id="GTT-Of-LHm"/>
+                            <constraint firstItem="P2F-mh-jwf" firstAttribute="centerY" secondItem="EHc-8x-ShV" secondAttribute="centerY" id="GYX-Zw-w7f"/>
+                            <constraint firstItem="EHc-8x-ShV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JQi-vZ-sjd"/>
                             <constraint firstItem="22i-en-w2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ra4-mY-toZ"/>
+                            <constraint firstItem="EHc-8x-ShV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bha-LY-RYu"/>
+                            <constraint firstItem="a8w-NE-oVA" firstAttribute="centerY" secondItem="EHc-8x-ShV" secondAttribute="centerY" id="o1s-3x-d5y"/>
                             <constraint firstAttribute="trailing" secondItem="22i-en-w2K" secondAttribute="trailing" id="ulm-St-F1i"/>
                         </constraints>
                     </view>
