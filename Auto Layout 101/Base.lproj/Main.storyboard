@@ -42,24 +42,38 @@
                                     <constraint firstAttribute="height" constant="60" id="gXI-ZM-s2D"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-mh-jwf">
-                                <rect key="frame" x="66" y="303" width="71" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="EHc-8x-ShV" userLabel="Heart">
-                                <rect key="frame" x="146" y="292" width="83" height="83"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EjL-mP-F5c">
+                                <rect key="frame" x="66" y="303" width="237" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-mh-jwf">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="d2N-Ej-YhZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="EHc-8x-ShV" userLabel="Heart">
+                                        <rect key="frame" x="65" y="0.0" width="77" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EHc-8x-ShV" secondAttribute="height" multiplier="1:1" id="3hw-57-9OT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-NE-oVA">
+                                        <rect key="frame" x="147" y="0.0" width="90" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="Vfa-M6-x7S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="EHc-8x-ShV" secondAttribute="height" multiplier="1:1" id="3hw-57-9OT"/>
+                                    <constraint firstItem="EHc-8x-ShV" firstAttribute="width" secondItem="EjL-mP-F5c" secondAttribute="height" multiplier="1:8" constant="67.625" id="mRa-jz-edL"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swift" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-NE-oVA">
-                                <rect key="frame" x="238" y="303" width="110" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mFC-5l-QV9">
                                 <rect key="frame" x="151" y="420" width="78" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,16 +99,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EHc-8x-ShV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:8" id="43S-tz-SUT"/>
-                            <constraint firstItem="a8w-NE-oVA" firstAttribute="leading" secondItem="EHc-8x-ShV" secondAttribute="trailing" constant="21" id="5O7-Uz-CrD"/>
                             <constraint firstAttribute="bottomMargin" secondItem="22i-en-w2K" secondAttribute="bottom" id="9jD-lX-5gX"/>
-                            <constraint firstItem="EHc-8x-ShV" firstAttribute="leading" secondItem="P2F-mh-jwf" secondAttribute="trailing" constant="20" id="GTT-Of-LHm"/>
-                            <constraint firstItem="P2F-mh-jwf" firstAttribute="centerY" secondItem="EHc-8x-ShV" secondAttribute="centerY" id="GYX-Zw-w7f"/>
-                            <constraint firstItem="EHc-8x-ShV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JQi-vZ-sjd"/>
                             <constraint firstItem="22i-en-w2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ra4-mY-toZ"/>
-                            <constraint firstItem="EHc-8x-ShV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bha-LY-RYu"/>
-                            <constraint firstItem="a8w-NE-oVA" firstAttribute="centerY" secondItem="EHc-8x-ShV" secondAttribute="centerY" id="o1s-3x-d5y"/>
+                            <constraint firstItem="EjL-mP-F5c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dyG-aV-zBg"/>
                             <constraint firstAttribute="trailing" secondItem="22i-en-w2K" secondAttribute="trailing" id="ulm-St-F1i"/>
+                            <constraint firstItem="EjL-mP-F5c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wAq-DU-hGV"/>
                         </constraints>
                     </view>
                 </viewController>
