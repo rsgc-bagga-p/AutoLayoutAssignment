@@ -106,23 +106,29 @@
                                 <rect key="frame" x="0.0" y="331" width="375" height="336"/>
                                 <color key="backgroundColor" red="0.33123524900000001" green="0.018778419609999999" blue="0.80433982329999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDc-XI-41c">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDc-XI-41c">
                                 <rect key="frame" x="183" y="0.0" width="192" height="329"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mh-Ky-Dv3">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mh-Ky-Dv3">
                                 <rect key="frame" x="0.0" y="0.0" width="189" height="329"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mDc-XI-41c" secondAttribute="trailing" id="0Yv-V4-unV"/>
                             <constraint firstItem="iHU-X7-hQl" firstAttribute="height" secondItem="5uL-g2-FuZ" secondAttribute="height" multiplier="0.5" id="6iu-CV-M6J"/>
+                            <constraint firstItem="5mh-Ky-Dv3" firstAttribute="height" secondItem="5uL-g2-FuZ" secondAttribute="height" multiplier="0.5" id="862-Wf-WPb"/>
+                            <constraint firstItem="5mh-Ky-Dv3" firstAttribute="width" secondItem="5uL-g2-FuZ" secondAttribute="width" multiplier="2/3" id="8DF-jU-O65"/>
+                            <constraint firstItem="5mh-Ky-Dv3" firstAttribute="leading" secondItem="5uL-g2-FuZ" secondAttribute="leading" id="9uW-dW-1xR"/>
                             <constraint firstItem="iHU-X7-hQl" firstAttribute="leading" secondItem="5uL-g2-FuZ" secondAttribute="leading" id="AaW-iD-S3N"/>
+                            <constraint firstItem="mDc-XI-41c" firstAttribute="top" secondItem="5uL-g2-FuZ" secondAttribute="top" id="RWm-6J-kBB"/>
                             <constraint firstAttribute="trailing" secondItem="iHU-X7-hQl" secondAttribute="trailing" id="dOM-qK-tOS"/>
+                            <constraint firstItem="mDc-XI-41c" firstAttribute="width" secondItem="5uL-g2-FuZ" secondAttribute="width" multiplier="1/3" id="fwg-8T-1ds"/>
                             <constraint firstItem="iHU-X7-hQl" firstAttribute="width" secondItem="5uL-g2-FuZ" secondAttribute="width" id="iaC-qt-Mjr"/>
+                            <constraint firstItem="5mh-Ky-Dv3" firstAttribute="top" secondItem="5uL-g2-FuZ" secondAttribute="top" id="jZi-Ng-Ype"/>
+                            <constraint firstItem="mDc-XI-41c" firstAttribute="height" secondItem="5uL-g2-FuZ" secondAttribute="height" multiplier="0.5" id="k9M-6j-cBU"/>
                             <constraint firstItem="FDd-sE-yjg" firstAttribute="top" secondItem="iHU-X7-hQl" secondAttribute="bottom" id="v2W-B5-u2i"/>
                         </constraints>
                     </view>
