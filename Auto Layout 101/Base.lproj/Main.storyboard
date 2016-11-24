@@ -102,11 +102,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="vN0-1t-vu7">
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vN0-1t-vu7">
                                 <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Squirrel" translatesAutoresizingMaskIntoConstraints="NO" id="djC-CH-dlm">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="591"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="571"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="cVq-bb-qet">
                                         <rect key="frame" x="0.0" y="591" width="355" height="36"/>
@@ -129,9 +129,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="cVq-bb-qet" firstAttribute="top" secondItem="djC-CH-dlm" secondAttribute="bottom" constant="20" id="3yh-W2-fco"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
